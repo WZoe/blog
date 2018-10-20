@@ -9,7 +9,8 @@ baseurl: '/blog'
 
 # Navigation links
 nav:
-  home: ''
+  home: 'https://wzoe.github.io'
+  blog: ''
   tags: '/tags.html'
 
 # Footer
@@ -19,7 +20,7 @@ footer:
 # Author 配置博主信息
 author: 'Ziyi Wang'
 nickname: 'Zoe'
-bio: 'Keep passion'
+bio: 'Undergraduate @ SJTU'
 avatar: '/assets/img/photo.png'
 
 # Search
