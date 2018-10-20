@@ -20,7 +20,7 @@ footer:
 author: 'Ziyi Wang'
 nickname: 'Zoe'
 bio: 'Keep passion'
-avatar: 'assets/img/photo.png'
+avatar: '/assets/img/photo.png'
 
 # Search
 search: true
