@@ -2,7 +2,7 @@
 title: 'Principle of Symmetry'
 description: 'Blog of Ziyi Wang'
 keyword: 'Blog of Ziyi Wang, Ziyi Wang, 王紫怡'
-url: 'https://wzoe.github.io/blog' # your host
+url: 'https://wzoe.github.io' # your host
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: '/blog'
@@ -53,7 +53,7 @@ sns:
   #juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   #instagram: '//www.instagram.com/steveliaocn'
   github: '//github.com/WZoe'
-  email: 'wzy_sjtu@foxmail.com'
+  email: 'mailto:wzy_sjtu@foxmail.com'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
