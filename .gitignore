@@ -1,6 +1,10 @@
 .DS_Store
 */.DS_Store
+
 .idea
+
+designsheets
+
 node_modules
 
 _site
