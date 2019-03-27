@@ -9,9 +9,10 @@ baseurl: '/blog'
 
 # Navigation links
 nav:
-  home: 'https://wzoe.github.io'
   blog: '/blog'
   tags: '/blog/tags.html'
+  homepage: 'https://wzoe.github.io'
+  resume: '/resume'
 
 # Footer
 footer:
