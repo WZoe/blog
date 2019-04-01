@@ -5,13 +5,15 @@ subtitle: '在进行Hyperledger Cello及Fabric的产品级部署时遇到的一�
 date: 2019-04-01
 categories: 学习笔记
 cover: '../../../../../assets/img/cello.png'
-tags: Hyperledger Cello 区块链
+tags: Hyperledger Cello 区块链 HyperledgerCello总结
 ---
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  {% for tags in site.tags %}
+  	{% if tags[0]=='HyperledgerCello总结' %}
+	    {% for post in tags[1] %}
+      		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    	{% endfor %}
+    {% endif %}
   {% endfor %}
 </ul>
 # 前言
@@ -127,7 +129,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 ```
 ### 5.访问管理界面
 http://[Master_Node_IP]:8080          默认用户名：admin 密码：pass
-![operator dashboard](./assets/img/cello-operator-dashboard.png)
+![operator dashboard]({{site.baseurl}}{{/assets/img/cello-operator-dashboard.png}})
 
 # 问题及解决
 - **进入Master_Node_IP:8080，显示invalid parameter，logs中显示connectionrefused error errno111 econnrefused socket出问题**
