@@ -4,11 +4,13 @@ title: 'Hyperledger Cello部署步骤和问题阶段总结（一）'
 subtitle: '在进行Hyperledger Cello及Fabric的产品级部署时遇到的一些问题和坑，在这里记录一下。'
 date: 2019-04-01
 categories: 学习笔记
-cover: '/assets/img/cello.png'
+cover: '../../../../../assets/img/cello.png'
 tags: Hyperledger Cello 区块链
 ---
-#前言
+# 前言
+
 最近在开发一项用于商业保险联盟用的Permissioned Blockchain System工程。主要用到的是**HyperLedger Cello**。Cello是Hyperledger旗下的项目之一，主要的作用有：
+
 >- 管理区块链网络的生命周期，即创建、开启、停止、删除等；从零开始构建一个BaaS服务
 >- 自定义区块链网络配置
 >- 支持在多种裸机、虚拟云端、容器等中管理区块链资源
@@ -20,9 +22,11 @@ tags: Hyperledger Cello 区块链
 
 这篇文章是截止到master-node部署完成。部署环境为ubuntu16。
 
-#部署步骤
-##一、 安装依赖
-###1. 安装docker
+# 部署步骤
+
+## 一、 安装依赖
+
+### 1. 安装docker
 ```
 #1) 更新
 sudo apt-get update
@@ -44,7 +48,7 @@ sudo apt-get install docker-ce
 #6) 确认是否安装成功
 docker -v
 ```
-###2. 安装docker-compose
+### 2. 安装docker-compose
 ```
 #1) 安装
 sudo curl -L https://github.com/docker/compose/releases/download/1.17.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
@@ -58,12 +62,13 @@ docker-compose --version
 ```
 sudo service docker start
 ```
-##二、部署Cello
-###1.下载源码
+## 二、部署Cello
+
+### 1.下载源码
 ```
 git clone https://github.com/hyperledger/cello
 ```
-###2.进入Cello目录下setup（这里是master）
+### 2.进入Cello目录下setup（这里是master）
 ```
 cd cello/
 make setup-master
@@ -77,12 +82,12 @@ Local database path /opt/cello/mongo not existed, creating one
 Setup done, please logout and login again.
 It's safe to run this script repeatedly.
 ```
-###3.重启terminal/连接
+### 3.重启terminal/连接
 
 ```
 exit
 ```
-###4.进入Cello目录下启动服务
+### 4.进入Cello目录下启动服务
 ```
 SERVER_PUBLIC_IP=X.X.X.X make start
 ```
@@ -113,11 +118,11 @@ tcp6       0      0 :::8080                 :::*                    LISTEN      
 tcp6       0      0 :::8081                 :::*                    LISTEN      13622/docker-proxy- 
 tcp6       0      0 :::22                   :::*                    LISTEN      4880/sshd   
 ```
-###5.访问管理界面
+### 5.访问管理界面
 http://[Master_Node_IP]:8080          默认用户名：admin 密码：pass
-![operator dashboard](cello-operator-dashboard.png)
+![operator dashboard](~/assets/img/cello-operator-dashboard.png)
 
-#问题及解决
+# 问题及解决
 - **进入Master_Node_IP:8080，显示invalid parameter，logs中显示connectionrefused error errno111 econnrefused socket出问题**
 
 	一般是主机网络错误。启动时记得加SERVER_PUBLIC_IP。
