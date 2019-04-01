@@ -129,7 +129,7 @@ tcp6       0      0 :::22                   :::*                    LISTEN      
 ```
 ### 5.访问管理界面
 http://[Master_Node_IP]:8080          默认用户名：admin 密码：pass
-![operator dashboard]({{site.baseurl}}{{/assets/img/cello-operator-dashboard.png}})
+![operator dashboard]({{ "/assets/img/cello-operator-dashboard.png" | prepend: site.baseurl }})
 
 # 问题及解决
 - **进入Master_Node_IP:8080，显示invalid parameter，logs中显示connectionrefused error errno111 econnrefused socket出问题**
