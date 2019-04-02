@@ -4,7 +4,7 @@ title: 'Hyperledger Cello部署步骤和问题阶段总结（一）'
 subtitle: '在进行Hyperledger Cello及Fabric的产品级部署时遇到的一些问题和坑，在这里记录一下。'
 date: 2019-04-01
 categories: 学习笔记
-cover: '{{ "/assets/img/cello-title.png" | prepend: site.baseurl }}'
+cover: {{ "/assets/img/cello-title.png" | prepend: site.baseurl }}
 tags: Hyperledger Cello 区块链 HyperledgerCello总结
 ---
 <ul>
@@ -67,7 +67,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 #2) 确认是否安装成功
 docker-compose --version
 ```
-###3.启动docker
+### 3.启动docker
 ```
 sudo service docker start
 ```
@@ -134,9 +134,13 @@ http://[Master_Node_IP]:8080          默认用户名：admin 密码：pass
 # 问题及解决
 - **进入Master_Node_IP:8080，显示invalid parameter，logs中显示connectionrefused error errno111 econnrefused socket出问题**
 
-	一般是主机网络错误。启动时记得加SERVER_PUBLIC_IP。
+	一般是主机网络错误。
+	1. `sudo make reset` `SERVER_PUBLIC_IP=X.X.X.X make start`
+		访问http://x.x.x.x:8080/
+	2. 如果是在虚拟机环境下部署，给虚拟机分配和本机同段的任一静态IP
 	
 - **make setup-master等提示docker相关的错误**
+
 	1. 检查docker-compose是否安装正确
 	2. 确认docker是否在运行 `sudo service docker start`
 	3. 把user添加到用户组 `sudo gpasswd -a ${USER} docker`
