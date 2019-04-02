@@ -4,7 +4,7 @@ title: 'Hyperledger Cello部署步骤和问题阶段总结（一）'
 subtitle: '在进行Hyperledger Cello及Fabric的产品级部署时遇到的一些问题和坑，在这里记录一下。'
 date: 2019-04-01
 categories: 学习笔记
-cover: {{ "/assets/img/cello-title.png" | prepend: site.baseurl }}
+cover: '{{ site.baseurl }}{{ "/assets/img/cello-title.png" }}''
 tags: Hyperledger Cello 区块链 HyperledgerCello总结
 ---
 <ul>
