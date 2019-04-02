@@ -11,7 +11,7 @@ tags: Hyperledger Cello 区块链 HyperledgerCello总结
   {% for tags in site.tags %}
   	{% if tags[0]=='HyperledgerCello总结' %}
 	    {% for post in tags[1] %}
-      		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      		<li><a href="{{ site.baseurl }}{{ post.url}}">{{ post.title }}</a></li>
     	{% endfor %}
     {% endif %}
   {% endfor %}
