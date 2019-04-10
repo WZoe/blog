@@ -4,7 +4,7 @@ title: 'What Steps Do You Take To Resolve A Problem?'
 subtitle: 'This was an original question raised by an admission committee. '
 date: 2019-04-10
 categories: 随笔
-tags: 思考
+tags: 思考 个人
 ---
 
 > What steps do you take to resolve a problem?
