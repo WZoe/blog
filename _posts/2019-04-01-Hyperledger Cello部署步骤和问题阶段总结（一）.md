@@ -17,7 +17,7 @@ tags: Hyperledger Cello 区块链 HyperledgerCello总结
 </ul>
 # 前言
 
-最近在开发一项用于商业保险联盟用的Permissioned Blockchain System工程。主要用到的是**HyperLedger Cello**。Cello是Hyperledger旗下的项目之一，主要的作用有：
+最近在开发一项联盟用的Permissioned Blockchain System工程。主要用到的是**HyperLedger Cello**。Cello是Hyperledger旗下的项目之一，主要的作用有：
 
 >- 管理区块链网络的生命周期，即创建、开启、停止、删除等；从零开始构建一个BaaS服务
 >- 自定义区块链网络配置
