@@ -17,7 +17,7 @@ tags: Hyperledger Cello 区块链 HyperledgerCello总结
 </ul>
 # 前言
 
-最近在开发一项联盟用的Permissioned Blockchain System工程。主要用到的是**HyperLedger Cello**。Cello是Hyperledger旗下的项目之一，主要的作用有：
+最近在实验室在开发一个医疗+保险公司用的Permissioned Blockchain System。前期先试了试**HyperLedger Cello**。Cello是Hyperledger旗下的项目之一，目前还是preview版本，主要的作用有：
 
 >- 管理区块链网络的生命周期，即创建、开启、停止、删除等；从零开始构建一个BaaS服务
 >- 自定义区块链网络配置
@@ -26,9 +26,9 @@ tags: Hyperledger Cello 区块链 HyperledgerCello总结
 
 简单来说，cello可以帮助我们管理链、管理智能合约，并提供一个图形化的UI方便运维人员操作。
 
-目前cello还是一个不太成熟的项目，网络上可用的资源较少。一般可以通过官方的[文档](https://cello.readthedocs.io/en/latest/)和[答疑区](https://chat.hyperledger.org/channel/cello)找到问题的答案。这系列文章记录一下开发部署过程中的一些步骤和坑用于参考。
+目前cello还是一个不太成熟的项目，网络上可用的资源较少，官方的[文档](https://cello.readthedocs.io/en/latest/)和[答疑区](https://chat.hyperledger.org/channel/cello)。稍微记录一下一些步骤和坑用于参考。
 
-这篇文章是截止到master-node部署完成。部署环境为ubuntu16。
+这篇文章是截止到master-node部署完成。部署环境为ubuntu16的server。
 
 # 部署步骤
 

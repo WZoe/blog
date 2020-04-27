@@ -9,8 +9,6 @@ tags: 思考 个人
 
 > What steps do you take to resolve a problem?
 
-This was an original question raised by an admission committee. I feel that concluding your 'steps' of thinking patterns is an interesting thing to do because the steps itself is a kind of thinking pattern. My answer:
-
 1.	When I encounter a problem, firstly I will estimate how difficult it is. Is it some topic I am familiar with? Or is it an unfamiliar problem in familiar field? Or, something I have never heard of? To better understand it, sufficient research should be done in advance and visiting people who know about this area can be inspiring.
 
 2.	Secondly, I will try to learn relevant knowledge about that field and try to figure out where the problem is actually pointing at. Which part of the problem requires most work? Which part is the most difficult?
