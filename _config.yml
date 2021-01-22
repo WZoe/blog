@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'Blog of Ziyi Wang'
+title: '紫怡的Blog'
 description: 'Blog of Ziyi Wang'
 keyword: 'Blog of Ziyi Wang, Ziyi Wang, 王紫怡'
 url: 'https://wzoe.github.io' # your host
@@ -11,18 +11,18 @@ baseurl: '/blog'
 nav:
   blog: '/blog'
   tags: '/blog/tags.html'
-  homepage: 'https://wzoe.github.io'
   resume: '/resume'
+  homepage: 'https://wzoe.github.io'
 
 # Footer
 footer:
   since: 2018
 
 # Author 配置博主信息
-author: 'Ziyi Wang'
+author: '紫怡'
 nickname: 'Zoe'
-bio: 'Undergraduate @ SJTU'
-avatar: '/assets/img/photo.png'
+bio: 'MSCS & MISM@WashU 21', CS@SJTU 19. 爱钻研，爱创造，爱艺术，爱生活。'
+avatar: '/assets/img/photo.jpg'
 
 # Search
 search: true
@@ -53,7 +53,7 @@ postPatterns: 'food'
 sns:
   #weibo: '//weibo.com/lovecolcol'
   #juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-  #instagram: '//www.instagram.com/steveliaocn'
+  instagram: '//www.instagram.com/wzoezy'
   github: '//github.com/WZoe'
   email: 'mailto:wzy_sjtu@foxmail.com'
 
